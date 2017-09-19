@@ -1,0 +1,39 @@
+{
+  "name": "js-project",
+  "version": "1.0.0",
+  "description": "JS porject stuff",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:production": "NODE_ENV=production webpack",
+    "clean": "rimraf ./dist/*.js ./dist/*.map",
+    "watch": "webpack --watch",
+    "serve": "webpack-dev-server --content-base dist/ --inline --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-cheesman/js-project.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "John Cheesman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/john-cheesman/js-project/issues"
+  },
+  "homepage": "https://github.com/john-cheesman/js-project#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
